@@ -5,7 +5,7 @@ ships as a single static binary.
 
 ## Build & install
 
-Requires Go ≥ 1.25.
+Requires Go ≥ 1.27.
 
 ```bash
 ./scripts/build.sh                     # all targets: darwin/linux/windows, arm64+amd64
@@ -80,7 +80,7 @@ kvm_device_settings
 Failed structured-tool calls return `structuredContent` with a stable error
 code (`DEVICE_NOT_CONFIGURED`, `DEVICE_AUTH_REQUIRED`, `CONNECTION_*`,
 `AGENT_SLOT_OCCUPIED`, `RPC_METHOD_NOT_EXPOSED`, `RPC_DEVICE_ERROR`,
-`FT_VOLUME_NOT_MOUNTED`, `FT_FILE_EXISTS`, `UPLOAD_INCOMPLETE`,
+`RPC_TIMEOUT`, `FT_VOLUME_NOT_MOUNTED`, `FT_FILE_EXISTS`, `UPLOAD_INCOMPLETE`,
 `SOURCE_FILE_INVALID`, `INVALID_ARGUMENT`, `INTERNAL`) plus an actionable
 hint. The MCP never auto-retries: the Agent decides whether to call again.
 
