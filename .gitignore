@@ -1,0 +1,4 @@
+bin/
+.zcode/
+.codegraph/
+.DS_Store
